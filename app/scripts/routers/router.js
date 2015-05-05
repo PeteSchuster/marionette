@@ -1,11 +1,13 @@
 define([
-	'backbone'
+    'backbone'
 ],
 function(Backbone){
     'use strict';
 
-	return Backbone.Router.extend({
-		/* Backbone routes hash */
-		routes: {}
-	});
+    return Backbone.Router.extend({
+        /* Backbone routes hash */
+        routes: {
+            
+        }
+    });
 });
