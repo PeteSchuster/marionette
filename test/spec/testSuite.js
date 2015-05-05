@@ -11,6 +11,7 @@ define(function() {
 		'spec/regions/page-footer.js',
 		'spec/regions/page-header.js',
 		'spec/regions/page-main.js',
+		'spec/routers/router.js',
 		'spec/views/item/product.js'
 		]
 	};
