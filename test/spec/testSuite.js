@@ -9,6 +9,7 @@ define(function() {
 		'spec/models/user.js',
 		'spec/regions/page-footer.js',
 		'spec/regions/page-header.js',
+		'spec/regions/page-main.js',
 		'spec/views/item/product.js'
 		]
 	};
