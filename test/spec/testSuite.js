@@ -7,6 +7,7 @@ define(function() {
 		'spec/exampleTest.js',
 		'spec/models/product.js',
 		'spec/models/user.js',
+		'spec/regions/page-aside.js',
 		'spec/regions/page-footer.js',
 		'spec/regions/page-header.js',
 		'spec/regions/page-main.js',
