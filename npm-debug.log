@@ -1,0 +1,946 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'grunt-cli' ]
+2 info using npm@2.8.3
+3 info using node@v0.12.2
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'grunt-cli', null ]
+7 verbose cache add spec grunt-cli
+8 silly cache add parsed spec { raw: 'grunt-cli',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'grunt-cli',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed grunt-cli@*
+10 verbose addNamed "*" is a valid semver range for grunt-cli
+11 silly addNameRange { name: 'grunt-cli', range: '*', hasData: false }
+12 silly mapToRegistry name grunt-cli
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/grunt-cli
+16 verbose addNameRange registry:https://registry.npmjs.org/grunt-cli not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/grunt-cli
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 8:28:44 AM
+20 verbose request id bde899f25cd6a689
+21 verbose etag "4CBI2CVFSWH84UQ0CA8Z6DVQ6"
+22 http request GET https://registry.npmjs.org/grunt-cli
+23 http 200 https://registry.npmjs.org/grunt-cli
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"ESOLH8ZL8KEZNRX2NLRNH19R4"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '20797',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Thu, 30 Apr 2015 12:28:46 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '24',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-jfk1030-JFK',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '27',
+24 silly get     'x-timer': 'S1430396926.640767,VS0,VE0',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving grunt-cli to /Users/pschus200/.npm/registry.npmjs.org/grunt-cli/.cache.json
+26 silly addNameRange number 2 { name: 'grunt-cli', range: '*', hasData: true }
+27 silly addNameRange versions [ 'grunt-cli',
+27 silly addNameRange   [ '0.1.0',
+27 silly addNameRange     '0.1.1',
+27 silly addNameRange     '0.1.2',
+27 silly addNameRange     '0.1.3',
+27 silly addNameRange     '0.1.4',
+27 silly addNameRange     '0.1.5',
+27 silly addNameRange     '0.1.6',
+27 silly addNameRange     '0.1.7',
+27 silly addNameRange     '0.1.8',
+27 silly addNameRange     '0.1.9',
+27 silly addNameRange     '0.1.10',
+27 silly addNameRange     '0.1.11',
+27 silly addNameRange     '0.1.12',
+27 silly addNameRange     '0.1.13' ] ]
+28 silly addNamed grunt-cli@0.1.13
+29 verbose addNamed "0.1.13" is a plain semver version for grunt-cli
+30 silly cache afterAdd grunt-cli@0.1.13
+31 verbose afterAdd /Users/pschus200/.npm/grunt-cli/0.1.13/package/package.json not in flight; writing
+32 verbose afterAdd /Users/pschus200/.npm/grunt-cli/0.1.13/package/package.json written
+33 silly install resolved [ { name: 'grunt-cli',
+33 silly install resolved     description: 'The grunt command line interface.',
+33 silly install resolved     version: '0.1.13',
+33 silly install resolved     author: { name: 'Grunt Team' },
+33 silly install resolved     homepage: 'http://gruntjs.com/',
+33 silly install resolved     repository: { type: 'git', url: 'git://github.com/gruntjs/grunt-cli.git' },
+33 silly install resolved     bugs: { url: 'http://github.com/gruntjs/grunt-cli/issues' },
+33 silly install resolved     licenses: [ [Object] ],
+33 silly install resolved     bin: { grunt: 'bin/grunt' },
+33 silly install resolved     engines: { node: '>= 0.8.0' },
+33 silly install resolved     scripts: { test: 'node bin/grunt test' },
+33 silly install resolved     preferGlobal: true,
+33 silly install resolved     dependencies: { nopt: '~1.0.10', 'findup-sync': '~0.1.0', resolve: '~0.3.1' },
+33 silly install resolved     devDependencies: { grunt: '~0.4.0', 'grunt-contrib-jshint': '~0.2.0' },
+33 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+33 silly install resolved     _id: 'grunt-cli@0.1.13',
+33 silly install resolved     dist:
+33 silly install resolved      { shasum: 'e9ebc4047631f5012d922770c39378133cad10f4',
+33 silly install resolved        tarball: 'http://registry.npmjs.org/grunt-cli/-/grunt-cli-0.1.13.tgz' },
+33 silly install resolved     _from: 'grunt-cli@*',
+33 silly install resolved     _npmVersion: '1.3.24',
+33 silly install resolved     _npmUser: { name: 'tkellen', email: 'tyler@sleekcode.net' },
+33 silly install resolved     maintainers: [ [Object] ],
+33 silly install resolved     directories: {},
+33 silly install resolved     _shasum: 'e9ebc4047631f5012d922770c39378133cad10f4',
+33 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-cli/-/grunt-cli-0.1.13.tgz',
+33 silly install resolved     readme: 'ERROR: No README data found!' } ]
+34 info install grunt-cli@0.1.13 into /usr/local/lib
+35 info installOne grunt-cli@0.1.13
+36 verbose installOne of grunt-cli to /usr/local/lib not in flight; installing
+37 verbose lock using /Users/pschus200/.npm/_locks/grunt-cli-58f484dab06f0a30.lock for /usr/local/lib/node_modules/grunt-cli
+38 silly install write writing grunt-cli 0.1.13 to /usr/local/lib/node_modules/grunt-cli
+39 verbose unbuild lib/node_modules/grunt-cli
+40 info preuninstall grunt-cli@0.1.13
+41 info uninstall grunt-cli@0.1.13
+42 verbose unbuild rmStuff grunt-cli@0.1.13 from /usr/local/lib/node_modules
+43 silly gentlyRm /usr/local/bin/grunt is being gently removed
+44 silly gentlyRm verifying /usr/local is an npm working directory
+45 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+46 silly gentlyRm deletion target /usr/local/bin/grunt is under /usr/local
+47 verbose gentlyRm vacuuming from /usr/local/bin/grunt up to /usr/local
+48 silly vacuum-fs removing /usr/local/bin/grunt
+49 silly vacuum-fs quitting because other entries in /usr/local/bin
+50 info postuninstall grunt-cli@0.1.13
+51 silly gentlyRm /usr/local/lib/node_modules/grunt-cli is being purged from base /usr/local
+52 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli
+53 silly vacuum-fs purging /usr/local/lib/node_modules/grunt-cli
+54 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
+55 verbose tar unpack /Users/pschus200/.npm/grunt-cli/0.1.13/package.tgz
+56 verbose tar unpacking to /usr/local/lib/node_modules/grunt-cli
+57 silly gentlyRm /usr/local/lib/node_modules/grunt-cli is being purged
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm extractEntry .npmignore
+62 silly gunzTarPerm extractEntry README.md
+63 silly gunzTarPerm extractEntry Gruntfile.js
+64 silly gunzTarPerm extractEntry .travis.yml
+65 silly gunzTarPerm extractEntry AUTHORS
+66 silly gunzTarPerm extractEntry LICENSE-MIT
+67 silly gunzTarPerm extractEntry bin/grunt
+68 silly gunzTarPerm extractEntry completion/bash
+69 silly gunzTarPerm extractEntry completion/zsh
+70 silly gunzTarPerm extractEntry lib/cli.js
+71 silly gunzTarPerm extractEntry lib/completion.js
+72 silly gunzTarPerm extractEntry lib/info.js
+73 verbose write writing to /usr/local/lib/node_modules/grunt-cli/package.json
+74 info preinstall grunt-cli@0.1.13
+75 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/package.json
+76 silly prepareForInstallMany adding nopt@~1.0.10 from grunt-cli dependencies
+77 silly prepareForInstallMany adding findup-sync@~0.1.0 from grunt-cli dependencies
+78 silly prepareForInstallMany adding resolve@~0.3.1 from grunt-cli dependencies
+79 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/package.json
+80 silly cache add args [ 'nopt@~1.0.10', null ]
+81 verbose cache add spec nopt@~1.0.10
+82 silly cache add args [ 'findup-sync@~0.1.0', null ]
+83 verbose cache add spec findup-sync@~0.1.0
+84 silly cache add parsed spec { raw: 'nopt@~1.0.10',
+84 silly cache add   scope: null,
+84 silly cache add   name: 'nopt',
+84 silly cache add   rawSpec: '~1.0.10',
+84 silly cache add   spec: '>=1.0.10 <1.1.0',
+84 silly cache add   type: 'range' }
+85 silly addNamed nopt@>=1.0.10 <1.1.0
+86 verbose addNamed ">=1.0.10 <1.1.0" is a valid semver range for nopt
+87 silly addNameRange { name: 'nopt', range: '>=1.0.10 <1.1.0', hasData: false }
+88 silly mapToRegistry name nopt
+89 silly mapToRegistry using default registry
+90 silly mapToRegistry registry https://registry.npmjs.org/
+91 silly mapToRegistry uri https://registry.npmjs.org/nopt
+92 verbose addNameRange registry:https://registry.npmjs.org/nopt not in flight; fetching
+93 silly cache add parsed spec { raw: 'findup-sync@~0.1.0',
+93 silly cache add   scope: null,
+93 silly cache add   name: 'findup-sync',
+93 silly cache add   rawSpec: '~0.1.0',
+93 silly cache add   spec: '>=0.1.0 <0.2.0',
+93 silly cache add   type: 'range' }
+94 silly addNamed findup-sync@>=0.1.0 <0.2.0
+95 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for findup-sync
+96 silly addNameRange { name: 'findup-sync', range: '>=0.1.0 <0.2.0', hasData: false }
+97 silly mapToRegistry name findup-sync
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry uri https://registry.npmjs.org/findup-sync
+101 verbose addNameRange registry:https://registry.npmjs.org/findup-sync not in flight; fetching
+102 silly cache add args [ 'resolve@~0.3.1', null ]
+103 verbose cache add spec resolve@~0.3.1
+104 silly cache add parsed spec { raw: 'resolve@~0.3.1',
+104 silly cache add   scope: null,
+104 silly cache add   name: 'resolve',
+104 silly cache add   rawSpec: '~0.3.1',
+104 silly cache add   spec: '>=0.3.1 <0.4.0',
+104 silly cache add   type: 'range' }
+105 silly addNamed resolve@>=0.3.1 <0.4.0
+106 verbose addNamed ">=0.3.1 <0.4.0" is a valid semver range for resolve
+107 silly addNameRange { name: 'resolve', range: '>=0.3.1 <0.4.0', hasData: false }
+108 silly mapToRegistry name resolve
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry uri https://registry.npmjs.org/resolve
+112 verbose addNameRange registry:https://registry.npmjs.org/resolve not in flight; fetching
+113 verbose request uri https://registry.npmjs.org/findup-sync
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 8:28:46 AM
+116 verbose etag "CT2PJF8E88RPQNWEIB1UFL8EJ"
+117 http request GET https://registry.npmjs.org/findup-sync
+118 verbose request uri https://registry.npmjs.org/nopt
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 8:28:46 AM
+121 verbose etag "CP2XOOC524J3F2IKB32MWTE1L"
+122 http request GET https://registry.npmjs.org/nopt
+123 verbose request uri https://registry.npmjs.org/resolve
+124 verbose request no auth needed
+125 info attempt registry request try #1 at 8:28:46 AM
+126 verbose etag "BGPGHHY69TMGRK3Y5TSKIMIFD"
+127 http request GET https://registry.npmjs.org/resolve
+128 http 304 https://registry.npmjs.org/findup-sync
+129 silly get cb [ 304,
+129 silly get   { date: 'Thu, 30 Apr 2015 12:28:47 GMT',
+129 silly get     via: '1.1 varnish',
+129 silly get     'last-modified': 'Thu, 30 Apr 2015 12:28:47 GMT',
+129 silly get     'cache-control': 'max-age=60',
+129 silly get     etag: '"CT2PJF8E88RPQNWEIB1UFL8EJ"',
+129 silly get     age: '50',
+129 silly get     connection: 'keep-alive',
+129 silly get     'x-served-by': 'cache-jfk1035-JFK',
+129 silly get     'x-cache': 'HIT',
+129 silly get     'x-cache-hits': '1',
+129 silly get     'x-timer': 'S1430396927.374686,VS0,VE0',
+129 silly get     vary: 'Accept' } ]
+130 verbose etag https://registry.npmjs.org/findup-sync from cache
+131 verbose get saving findup-sync to /Users/pschus200/.npm/registry.npmjs.org/findup-sync/.cache.json
+132 silly addNameRange number 2 { name: 'findup-sync', range: '>=0.1.0 <0.2.0', hasData: true }
+133 silly addNameRange versions [ 'findup-sync',
+133 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.2.0', '0.2.1' ] ]
+134 silly addNamed findup-sync@0.1.3
+135 verbose addNamed "0.1.3" is a plain semver version for findup-sync
+136 silly cache afterAdd findup-sync@0.1.3
+137 verbose afterAdd /Users/pschus200/.npm/findup-sync/0.1.3/package/package.json not in flight; writing
+138 verbose afterAdd /Users/pschus200/.npm/findup-sync/0.1.3/package/package.json written
+139 http 304 https://registry.npmjs.org/resolve
+140 silly get cb [ 304,
+140 silly get   { date: 'Thu, 30 Apr 2015 12:28:47 GMT',
+140 silly get     via: '1.1 varnish',
+140 silly get     'last-modified': 'Thu, 30 Apr 2015 12:28:34 GMT',
+140 silly get     'cache-control': 'max-age=60',
+140 silly get     etag: '"BGPGHHY69TMGRK3Y5TSKIMIFD"',
+140 silly get     age: '48',
+140 silly get     connection: 'keep-alive',
+140 silly get     'x-served-by': 'cache-jfk1028-JFK',
+140 silly get     'x-cache': 'HIT',
+140 silly get     'x-cache-hits': '3',
+140 silly get     'x-timer': 'S1430396927.468182,VS0,VE0',
+140 silly get     vary: 'Accept' } ]
+141 verbose etag https://registry.npmjs.org/resolve from cache
+142 verbose get saving resolve to /Users/pschus200/.npm/registry.npmjs.org/resolve/.cache.json
+143 silly addNameRange number 2 { name: 'resolve', range: '>=0.3.1 <0.4.0', hasData: true }
+144 silly addNameRange versions [ 'resolve',
+144 silly addNameRange   [ '0.0.0',
+144 silly addNameRange     '0.0.1',
+144 silly addNameRange     '0.0.2',
+144 silly addNameRange     '0.0.3',
+144 silly addNameRange     '0.0.4',
+144 silly addNameRange     '0.1.0',
+144 silly addNameRange     '0.1.2',
+144 silly addNameRange     '0.1.3',
+144 silly addNameRange     '0.2.0',
+144 silly addNameRange     '0.2.1',
+144 silly addNameRange     '0.2.2',
+144 silly addNameRange     '0.2.3',
+144 silly addNameRange     '0.2.4',
+144 silly addNameRange     '0.2.5',
+144 silly addNameRange     '0.2.6',
+144 silly addNameRange     '0.2.7',
+144 silly addNameRange     '0.2.8',
+144 silly addNameRange     '0.3.0',
+144 silly addNameRange     '0.3.1',
+144 silly addNameRange     '0.4.0',
+144 silly addNameRange     '0.4.1',
+144 silly addNameRange     '0.4.2',
+144 silly addNameRange     '0.4.3',
+144 silly addNameRange     '0.5.0',
+144 silly addNameRange     '0.5.1',
+144 silly addNameRange     '0.6.0',
+144 silly addNameRange     '0.6.1',
+144 silly addNameRange     '0.6.2',
+144 silly addNameRange     '0.6.3',
+144 silly addNameRange     '0.7.0',
+144 silly addNameRange     '0.7.1',
+144 silly addNameRange     '0.7.2',
+144 silly addNameRange     '0.7.3',
+144 silly addNameRange     '0.7.4',
+144 silly addNameRange     '1.0.0',
+144 silly addNameRange     '1.1.0',
+144 silly addNameRange     '1.1.2',
+144 silly addNameRange     '1.1.3',
+144 silly addNameRange     '1.1.4',
+144 silly addNameRange     '1.1.5',
+144 silly addNameRange     '1.1.6' ] ]
+145 silly addNamed resolve@0.3.1
+146 verbose addNamed "0.3.1" is a plain semver version for resolve
+147 silly cache afterAdd resolve@0.3.1
+148 verbose afterAdd /Users/pschus200/.npm/resolve/0.3.1/package/package.json not in flight; writing
+149 verbose afterAdd /Users/pschus200/.npm/resolve/0.3.1/package/package.json written
+150 http 200 https://registry.npmjs.org/nopt
+151 silly get cb [ 200,
+151 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+151 silly get     etag: '"33E51D7L2VL4IWEQQYT6B6P9H"',
+151 silly get     'content-type': 'application/json',
+151 silly get     'cache-control': 'max-age=60',
+151 silly get     'content-length': '25529',
+151 silly get     'accept-ranges': 'bytes',
+151 silly get     date: 'Thu, 30 Apr 2015 12:28:47 GMT',
+151 silly get     via: '1.1 varnish',
+151 silly get     age: '48',
+151 silly get     connection: 'keep-alive',
+151 silly get     'x-served-by': 'cache-jfk1030-JFK',
+151 silly get     'x-cache': 'HIT',
+151 silly get     'x-cache-hits': '2',
+151 silly get     'x-timer': 'S1430396927.406127,VS0,VE0',
+151 silly get     vary: 'Accept' } ]
+152 verbose get saving nopt to /Users/pschus200/.npm/registry.npmjs.org/nopt/.cache.json
+153 silly addNameRange number 2 { name: 'nopt', range: '>=1.0.10 <1.1.0', hasData: true }
+154 silly addNameRange versions [ 'nopt',
+154 silly addNameRange   [ '1.0.0',
+154 silly addNameRange     '1.0.1',
+154 silly addNameRange     '1.0.2',
+154 silly addNameRange     '1.0.3',
+154 silly addNameRange     '1.0.4',
+154 silly addNameRange     '1.0.5',
+154 silly addNameRange     '1.0.6',
+154 silly addNameRange     '1.0.7',
+154 silly addNameRange     '1.0.8',
+154 silly addNameRange     '1.0.9',
+154 silly addNameRange     '1.0.10',
+154 silly addNameRange     '2.0.0',
+154 silly addNameRange     '2.1.0',
+154 silly addNameRange     '2.1.1',
+154 silly addNameRange     '2.1.2',
+154 silly addNameRange     '2.2.0',
+154 silly addNameRange     '2.2.1',
+154 silly addNameRange     '3.0.0',
+154 silly addNameRange     '3.0.1' ] ]
+155 silly addNamed nopt@1.0.10
+156 verbose addNamed "1.0.10" is a plain semver version for nopt
+157 silly cache afterAdd nopt@1.0.10
+158 verbose afterAdd /Users/pschus200/.npm/nopt/1.0.10/package/package.json not in flight; writing
+159 verbose afterAdd /Users/pschus200/.npm/nopt/1.0.10/package/package.json written
+160 silly install resolved [ { name: 'findup-sync',
+160 silly install resolved     description: 'Find the first file matching a given pattern in the current directory or the nearest ancestor directory.',
+160 silly install resolved     version: '0.1.3',
+160 silly install resolved     homepage: 'https://github.com/cowboy/node-findup-sync',
+160 silly install resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+160 silly install resolved     repository:
+160 silly install resolved      { type: 'git',
+160 silly install resolved        url: 'git://github.com/cowboy/node-findup-sync.git' },
+160 silly install resolved     bugs: { url: 'https://github.com/cowboy/node-findup-sync/issues' },
+160 silly install resolved     licenses: [ [Object] ],
+160 silly install resolved     main: 'lib/findup-sync',
+160 silly install resolved     engines: { node: '>= 0.6.0' },
+160 silly install resolved     scripts: { test: 'grunt nodeunit' },
+160 silly install resolved     dependencies: { glob: '~3.2.9', lodash: '~2.4.1' },
+160 silly install resolved     devDependencies:
+160 silly install resolved      { grunt: '~0.4.4',
+160 silly install resolved        'grunt-contrib-jshint': '~0.9.2',
+160 silly install resolved        'grunt-contrib-nodeunit': '~0.3.3' },
+160 silly install resolved     keywords: [ 'find', 'glob', 'file' ],
+160 silly install resolved     _id: 'findup-sync@0.1.3',
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: '7f3e7a97b82392c653bf06589bd85190e93c3683',
+160 silly install resolved        tarball: 'http://registry.npmjs.org/findup-sync/-/findup-sync-0.1.3.tgz' },
+160 silly install resolved     _from: 'findup-sync@>=0.1.0 <0.2.0',
+160 silly install resolved     _npmVersion: '1.4.4',
+160 silly install resolved     _npmUser: { name: 'cowboy', email: 'cowboy@rj3.net' },
+160 silly install resolved     maintainers: [ [Object] ],
+160 silly install resolved     directories: {},
+160 silly install resolved     _shasum: '7f3e7a97b82392c653bf06589bd85190e93c3683',
+160 silly install resolved     _resolved: 'https://registry.npmjs.org/findup-sync/-/findup-sync-0.1.3.tgz',
+160 silly install resolved     readme: 'ERROR: No README data found!' },
+160 silly install resolved   { name: 'resolve',
+160 silly install resolved     description: 'resolve like require.resolve() on behalf of files asynchronously and synchronously',
+160 silly install resolved     version: '0.3.1',
+160 silly install resolved     repository:
+160 silly install resolved      { type: 'git',
+160 silly install resolved        url: 'git://github.com/substack/node-resolve.git' },
+160 silly install resolved     main: 'index.js',
+160 silly install resolved     keywords: [ 'resolve', 'require', 'node', 'module' ],
+160 silly install resolved     scripts: { test: 'tap test/*.js' },
+160 silly install resolved     devDependencies: { tap: '~0.4.0' },
+160 silly install resolved     license: 'MIT',
+160 silly install resolved     author:
+160 silly install resolved      { name: 'James Halliday',
+160 silly install resolved        email: 'mail@substack.net',
+160 silly install resolved        url: 'http://substack.net' },
+160 silly install resolved     _id: 'resolve@0.3.1',
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: '34c63447c664c70598d1c9b126fc43b2a24310a4',
+160 silly install resolved        tarball: 'http://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz' },
+160 silly install resolved     _from: 'resolve@>=0.3.1 <0.4.0',
+160 silly install resolved     _npmVersion: '1.2.2',
+160 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+160 silly install resolved     maintainers: [ [Object] ],
+160 silly install resolved     directories: {},
+160 silly install resolved     _shasum: '34c63447c664c70598d1c9b126fc43b2a24310a4',
+160 silly install resolved     _resolved: 'https://registry.npmjs.org/resolve/-/resolve-0.3.1.tgz',
+160 silly install resolved     bugs: { url: 'https://github.com/substack/node-resolve/issues' },
+160 silly install resolved     readme: 'ERROR: No README data found!',
+160 silly install resolved     homepage: 'https://github.com/substack/node-resolve#readme' },
+160 silly install resolved   { name: 'nopt',
+160 silly install resolved     version: '1.0.10',
+160 silly install resolved     description: 'Option parsing for Node, supporting types, shorthands, etc. Used by npm.',
+160 silly install resolved     author:
+160 silly install resolved      { name: 'Isaac Z. Schlueter',
+160 silly install resolved        email: 'i@izs.me',
+160 silly install resolved        url: 'http://blog.izs.me/' },
+160 silly install resolved     main: 'lib/nopt.js',
+160 silly install resolved     scripts: { test: 'node lib/nopt.js' },
+160 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/nopt.git' },
+160 silly install resolved     bin: { nopt: './bin/nopt.js' },
+160 silly install resolved     license:
+160 silly install resolved      { type: 'MIT',
+160 silly install resolved        url: 'https://github.com/isaacs/nopt/raw/master/LICENSE' },
+160 silly install resolved     dependencies: { abbrev: '1' },
+160 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+160 silly install resolved     _id: 'nopt@1.0.10',
+160 silly install resolved     devDependencies: {},
+160 silly install resolved     engines: { node: '*' },
+160 silly install resolved     _engineSupported: true,
+160 silly install resolved     _npmVersion: '1.0.93',
+160 silly install resolved     _nodeVersion: 'v0.5.9-pre',
+160 silly install resolved     _defaultsLoaded: true,
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: '6ddd21bd2a31417b92727dd585f8a6f37608ebee',
+160 silly install resolved        tarball: 'http://registry.npmjs.org/nopt/-/nopt-1.0.10.tgz' },
+160 silly install resolved     maintainers: [ [Object] ],
+160 silly install resolved     directories: {},
+160 silly install resolved     _shasum: '6ddd21bd2a31417b92727dd585f8a6f37608ebee',
+160 silly install resolved     _resolved: 'https://registry.npmjs.org/nopt/-/nopt-1.0.10.tgz',
+160 silly install resolved     _from: 'nopt@>=1.0.10 <1.1.0',
+160 silly install resolved     bugs: { url: 'https://github.com/isaacs/nopt/issues' },
+160 silly install resolved     readme: 'ERROR: No README data found!',
+160 silly install resolved     homepage: 'https://github.com/isaacs/nopt#readme' } ]
+161 info install findup-sync@0.1.3 into /usr/local/lib/node_modules/grunt-cli
+162 info install resolve@0.3.1 into /usr/local/lib/node_modules/grunt-cli
+163 info install nopt@1.0.10 into /usr/local/lib/node_modules/grunt-cli
+164 info installOne findup-sync@0.1.3
+165 verbose installOne of findup-sync to /usr/local/lib/node_modules/grunt-cli not in flight; installing
+166 info installOne resolve@0.3.1
+167 verbose installOne of resolve to /usr/local/lib/node_modules/grunt-cli not in flight; installing
+168 info installOne nopt@1.0.10
+169 verbose installOne of nopt to /usr/local/lib/node_modules/grunt-cli not in flight; installing
+170 verbose lock using /Users/pschus200/.npm/_locks/findup-sync-1678442878932c7d.lock for /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync
+171 silly install write writing findup-sync 0.1.3 to /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync
+172 verbose lock using /Users/pschus200/.npm/_locks/resolve-9cd6e0b6630d8964.lock for /usr/local/lib/node_modules/grunt-cli/node_modules/resolve
+173 verbose lock using /Users/pschus200/.npm/_locks/nopt-7c7cdc9424e3d5c8.lock for /usr/local/lib/node_modules/grunt-cli/node_modules/nopt
+174 silly install write writing resolve 0.3.1 to /usr/local/lib/node_modules/grunt-cli/node_modules/resolve
+175 silly install write writing nopt 1.0.10 to /usr/local/lib/node_modules/grunt-cli/node_modules/nopt
+176 verbose unbuild lib/node_modules/grunt-cli/node_modules/findup-sync
+177 verbose unbuild lib/node_modules/grunt-cli/node_modules/resolve
+178 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync is being purged from base /usr/local
+179 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync
+180 verbose unbuild lib/node_modules/grunt-cli/node_modules/nopt
+181 verbose tar unpack /Users/pschus200/.npm/findup-sync/0.1.3/package.tgz
+182 verbose tar unpacking to /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync
+183 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync is being purged
+184 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync
+185 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/resolve is being purged from base /usr/local
+186 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/resolve
+187 silly gunzTarPerm modes [ '755', '644' ]
+188 verbose tar unpack /Users/pschus200/.npm/resolve/0.3.1/package.tgz
+189 verbose tar unpacking to /usr/local/lib/node_modules/grunt-cli/node_modules/resolve
+190 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/resolve is being purged
+191 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/resolve
+192 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/nopt is being purged from base /usr/local
+193 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/nopt
+194 silly gunzTarPerm modes [ '755', '644' ]
+195 verbose tar unpack /Users/pschus200/.npm/nopt/1.0.10/package.tgz
+196 verbose tar unpacking to /usr/local/lib/node_modules/grunt-cli/node_modules/nopt
+197 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/nopt is being purged
+198 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/nopt
+199 silly gunzTarPerm modes [ '755', '644' ]
+200 silly gunzTarPerm extractEntry package.json
+201 silly gunzTarPerm extractEntry package.json
+202 silly gunzTarPerm extractEntry .gitignore
+203 silly gunzTarPerm extractEntry .npmignore
+204 silly gunzTarPerm extractEntry README.md
+205 silly gunzTarPerm extractEntry LICENSE
+206 silly gunzTarPerm extractEntry index.js
+207 silly gunzTarPerm extractEntry LICENSE
+208 silly gunzTarPerm extractEntry package.json
+209 silly gunzTarPerm extractEntry Gruntfile.js
+210 silly gunzTarPerm extractEntry .jshintrc
+211 silly gunzTarPerm extractEntry example/async.js
+212 silly gunzTarPerm extractEntry example/sync.js
+213 silly gunzTarPerm extractEntry README.md
+214 silly gunzTarPerm extractEntry bin/nopt.js
+215 silly gunzTarPerm extractEntry .travis.yml
+216 silly gunzTarPerm extractEntry LICENSE-MIT
+217 silly gunzTarPerm extractEntry examples/my-program.js
+218 silly gunzTarPerm extractEntry lib/nopt.js
+219 silly gunzTarPerm extractEntry readme.markdown
+220 silly gunzTarPerm extractEntry test/resolver.js
+221 silly gunzTarPerm extractEntry lib/findup-sync.js
+222 silly gunzTarPerm extractEntry test/findup-sync_test.js
+223 silly gunzTarPerm extractEntry test/core.js
+224 silly gunzTarPerm extractEntry test/filter_sync.js
+225 silly gunzTarPerm extractEntry test/fixtures/a/b/bar.txt
+226 silly gunzTarPerm extractEntry test/fixtures/a/foo.txt
+227 silly gunzTarPerm extractEntry test/resolver_sync.js
+228 silly gunzTarPerm extractEntry test/fixtures/a.txt
+229 silly gunzTarPerm extractEntry test/fixtures/aaa.txt
+230 silly gunzTarPerm extractEntry test/filter.js
+231 silly gunzTarPerm extractEntry test/mock.js
+232 silly gunzTarPerm extractEntry test/mock_sync.js
+233 silly gunzTarPerm extractEntry test/resolver/mug.js
+234 silly gunzTarPerm extractEntry test/resolver/foo.js
+235 silly gunzTarPerm extractEntry test/resolver/mug.coffee
+236 silly gunzTarPerm extractEntry test/resolver/cup.coffee
+237 silly gunzTarPerm extractEntry test/resolver/other_path/root.js
+238 silly gunzTarPerm extractEntry test/resolver/other_path/lib/other-lib.js
+239 silly gunzTarPerm extractEntry test/resolver/bar/node_modules/foo/index.js
+240 silly gunzTarPerm extractEntry test/resolver/baz/package.json
+241 silly gunzTarPerm extractEntry test/resolver/baz/quux.js
+242 verbose write writing to /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/package.json
+243 silly gunzTarPerm extractEntry test/resolver/baz/doom.js
+244 silly gunzTarPerm extractEntry test/resolver/biz/node_modules/tiv/index.js
+245 info preinstall nopt@1.0.10
+246 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/package.json
+247 silly gunzTarPerm extractEntry test/resolver/biz/node_modules/grux/index.js
+248 silly gunzTarPerm extractEntry .travis.yml
+249 silly prepareForInstallMany adding abbrev@1 from nopt dependencies
+250 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/package.json
+251 verbose write writing to /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync/package.json
+252 silly gunzTarPerm extractEntry lib/core.js
+253 silly gunzTarPerm extractEntry lib/async.js
+254 silly cache add args [ 'abbrev@1', null ]
+255 verbose cache add spec abbrev@1
+256 silly cache add parsed spec { raw: 'abbrev@1',
+256 silly cache add   scope: null,
+256 silly cache add   name: 'abbrev',
+256 silly cache add   rawSpec: '1',
+256 silly cache add   spec: '>=1.0.0 <2.0.0',
+256 silly cache add   type: 'range' }
+257 silly addNamed abbrev@>=1.0.0 <2.0.0
+258 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for abbrev
+259 silly addNameRange { name: 'abbrev', range: '>=1.0.0 <2.0.0', hasData: false }
+260 silly mapToRegistry name abbrev
+261 silly mapToRegistry using default registry
+262 silly mapToRegistry registry https://registry.npmjs.org/
+263 silly mapToRegistry uri https://registry.npmjs.org/abbrev
+264 verbose addNameRange registry:https://registry.npmjs.org/abbrev not in flight; fetching
+265 info preinstall findup-sync@0.1.3
+266 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync/package.json
+267 silly gunzTarPerm extractEntry lib/sync.js
+268 silly gunzTarPerm extractEntry lib/core.json
+269 verbose request uri https://registry.npmjs.org/abbrev
+270 verbose request no auth needed
+271 info attempt registry request try #1 at 8:28:47 AM
+272 verbose etag "AIK2XDX1GJIIYUUY93UDLGJV0"
+273 http request GET https://registry.npmjs.org/abbrev
+274 silly prepareForInstallMany adding glob@~3.2.9 from findup-sync dependencies
+275 silly prepareForInstallMany adding lodash@~2.4.1 from findup-sync dependencies
+276 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync/package.json
+277 silly cache add args [ 'glob@~3.2.9', null ]
+278 verbose cache add spec glob@~3.2.9
+279 silly cache add args [ 'lodash@~2.4.1', null ]
+280 verbose cache add spec lodash@~2.4.1
+281 silly cache add parsed spec { raw: 'glob@~3.2.9',
+281 silly cache add   scope: null,
+281 silly cache add   name: 'glob',
+281 silly cache add   rawSpec: '~3.2.9',
+281 silly cache add   spec: '>=3.2.9 <3.3.0',
+281 silly cache add   type: 'range' }
+282 silly addNamed glob@>=3.2.9 <3.3.0
+283 verbose addNamed ">=3.2.9 <3.3.0" is a valid semver range for glob
+284 silly addNameRange { name: 'glob', range: '>=3.2.9 <3.3.0', hasData: false }
+285 silly mapToRegistry name glob
+286 silly mapToRegistry using default registry
+287 silly mapToRegistry registry https://registry.npmjs.org/
+288 silly mapToRegistry uri https://registry.npmjs.org/glob
+289 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+290 silly cache add parsed spec { raw: 'lodash@~2.4.1',
+290 silly cache add   scope: null,
+290 silly cache add   name: 'lodash',
+290 silly cache add   rawSpec: '~2.4.1',
+290 silly cache add   spec: '>=2.4.1 <2.5.0',
+290 silly cache add   type: 'range' }
+291 silly addNamed lodash@>=2.4.1 <2.5.0
+292 verbose addNamed ">=2.4.1 <2.5.0" is a valid semver range for lodash
+293 silly addNameRange { name: 'lodash', range: '>=2.4.1 <2.5.0', hasData: false }
+294 silly mapToRegistry name lodash
+295 silly mapToRegistry using default registry
+296 silly mapToRegistry registry https://registry.npmjs.org/
+297 silly mapToRegistry uri https://registry.npmjs.org/lodash
+298 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+299 verbose request uri https://registry.npmjs.org/glob
+300 verbose request no auth needed
+301 info attempt registry request try #1 at 8:28:47 AM
+302 verbose etag "77U4JXC53AY4RVWILLEA1Y9A2"
+303 http request GET https://registry.npmjs.org/glob
+304 verbose request uri https://registry.npmjs.org/lodash
+305 verbose request no auth needed
+306 info attempt registry request try #1 at 8:28:47 AM
+307 verbose etag "7R4VH7TEI71JLJTRH6G75XDMT"
+308 http request GET https://registry.npmjs.org/lodash
+309 verbose write writing to /usr/local/lib/node_modules/grunt-cli/node_modules/resolve/package.json
+310 info preinstall resolve@0.3.1
+311 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/node_modules/resolve/package.json
+312 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/node_modules/resolve/package.json
+313 silly install resolved []
+314 verbose about to build /usr/local/lib/node_modules/grunt-cli/node_modules/resolve
+315 info build /usr/local/lib/node_modules/grunt-cli/node_modules/resolve
+316 info linkStuff resolve@0.3.1
+317 silly linkStuff resolve@0.3.1 has /usr/local/lib/node_modules/grunt-cli/node_modules as its parent node_modules
+318 silly linkStuff resolve@0.3.1 is part of a global install
+319 silly linkStuff resolve@0.3.1 is installed into a global node_modules
+320 verbose linkBins resolve@0.3.1
+321 verbose linkMans resolve@0.3.1
+322 verbose rebuildBundles resolve@0.3.1
+323 info install resolve@0.3.1
+324 info postinstall resolve@0.3.1
+325 verbose unlock done using /Users/pschus200/.npm/_locks/resolve-9cd6e0b6630d8964.lock for /usr/local/lib/node_modules/grunt-cli/node_modules/resolve
+326 http 304 https://registry.npmjs.org/abbrev
+327 silly get cb [ 304,
+327 silly get   { date: 'Thu, 30 Apr 2015 12:28:48 GMT',
+327 silly get     via: '1.1 varnish',
+327 silly get     'cache-control': 'max-age=60',
+327 silly get     etag: '"AIK2XDX1GJIIYUUY93UDLGJV0"',
+327 silly get     age: '7',
+327 silly get     connection: 'keep-alive',
+327 silly get     'x-served-by': 'cache-jfk1029-JFK',
+327 silly get     'x-cache': 'HIT',
+327 silly get     'x-cache-hits': '1',
+327 silly get     'x-timer': 'S1430396928.030945,VS0,VE0',
+327 silly get     vary: 'Accept' } ]
+328 verbose etag https://registry.npmjs.org/abbrev from cache
+329 verbose get saving abbrev to /Users/pschus200/.npm/registry.npmjs.org/abbrev/.cache.json
+330 silly addNameRange number 2 { name: 'abbrev', range: '>=1.0.0 <2.0.0', hasData: true }
+331 silly addNameRange versions [ 'abbrev', [ '1.0.3', '1.0.4', '1.0.5' ] ]
+332 silly addNamed abbrev@1.0.5
+333 verbose addNamed "1.0.5" is a plain semver version for abbrev
+334 silly cache afterAdd abbrev@1.0.5
+335 verbose afterAdd /Users/pschus200/.npm/abbrev/1.0.5/package/package.json not in flight; writing
+336 verbose afterAdd /Users/pschus200/.npm/abbrev/1.0.5/package/package.json written
+337 silly install resolved [ { name: 'abbrev',
+337 silly install resolved     version: '1.0.5',
+337 silly install resolved     description: 'Like ruby\'s abbrev module, but in js',
+337 silly install resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+337 silly install resolved     main: 'abbrev.js',
+337 silly install resolved     scripts: { test: 'node test.js' },
+337 silly install resolved     repository:
+337 silly install resolved      { type: 'git',
+337 silly install resolved        url: 'git+ssh://git@github.com/isaacs/abbrev-js.git' },
+337 silly install resolved     license:
+337 silly install resolved      { type: 'MIT',
+337 silly install resolved        url: 'https://github.com/isaacs/abbrev-js/raw/master/LICENSE' },
+337 silly install resolved     bugs: { url: 'https://github.com/isaacs/abbrev-js/issues' },
+337 silly install resolved     homepage: 'https://github.com/isaacs/abbrev-js',
+337 silly install resolved     _id: 'abbrev@1.0.5',
+337 silly install resolved     _shasum: '5d8257bd9ebe435e698b2fa431afde4fe7b10b03',
+337 silly install resolved     _from: 'abbrev@>=1.0.0 <2.0.0',
+337 silly install resolved     _npmVersion: '1.4.7',
+337 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+337 silly install resolved     maintainers: [ [Object] ],
+337 silly install resolved     dist:
+337 silly install resolved      { shasum: '5d8257bd9ebe435e698b2fa431afde4fe7b10b03',
+337 silly install resolved        tarball: 'http://registry.npmjs.org/abbrev/-/abbrev-1.0.5.tgz' },
+337 silly install resolved     directories: {},
+337 silly install resolved     _resolved: 'https://registry.npmjs.org/abbrev/-/abbrev-1.0.5.tgz',
+337 silly install resolved     readme: 'ERROR: No README data found!' } ]
+338 info install abbrev@1.0.5 into /usr/local/lib/node_modules/grunt-cli/node_modules/nopt
+339 info installOne abbrev@1.0.5
+340 verbose installOne of abbrev to /usr/local/lib/node_modules/grunt-cli/node_modules/nopt not in flight; installing
+341 verbose lock using /Users/pschus200/.npm/_locks/abbrev-25b071348306ecdd.lock for /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+342 silly install write writing abbrev 1.0.5 to /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+343 verbose unbuild lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+344 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev is being purged from base /usr/local
+345 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+346 verbose tar unpack /Users/pschus200/.npm/abbrev/1.0.5/package.tgz
+347 verbose tar unpacking to /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+348 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev is being purged
+349 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+350 silly gunzTarPerm modes [ '755', '644' ]
+351 silly gunzTarPerm extractEntry package.json
+352 silly gunzTarPerm extractEntry README.md
+353 silly gunzTarPerm extractEntry LICENSE
+354 silly gunzTarPerm extractEntry abbrev.js
+355 silly gunzTarPerm extractEntry test.js
+356 silly gunzTarPerm extractEntry CONTRIBUTING.md
+357 verbose write writing to /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev/package.json
+358 info preinstall abbrev@1.0.5
+359 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev/package.json
+360 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev/package.json
+361 silly install resolved []
+362 verbose about to build /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+363 info build /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+364 info linkStuff abbrev@1.0.5
+365 silly linkStuff abbrev@1.0.5 has /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules as its parent node_modules
+366 silly linkStuff abbrev@1.0.5 is part of a global install
+367 silly linkStuff abbrev@1.0.5 is installed into a global node_modules
+368 verbose linkBins abbrev@1.0.5
+369 verbose linkMans abbrev@1.0.5
+370 verbose rebuildBundles abbrev@1.0.5
+371 info install abbrev@1.0.5
+372 info postinstall abbrev@1.0.5
+373 verbose unlock done using /Users/pschus200/.npm/_locks/abbrev-25b071348306ecdd.lock for /usr/local/lib/node_modules/grunt-cli/node_modules/nopt/node_modules/abbrev
+374 verbose about to build /usr/local/lib/node_modules/grunt-cli/node_modules/nopt
+375 info build /usr/local/lib/node_modules/grunt-cli/node_modules/nopt
+376 info linkStuff nopt@1.0.10
+377 silly linkStuff nopt@1.0.10 has /usr/local/lib/node_modules/grunt-cli/node_modules as its parent node_modules
+378 silly linkStuff nopt@1.0.10 is part of a global install
+379 silly linkStuff nopt@1.0.10 is installed into a global node_modules
+380 verbose linkBins nopt@1.0.10
+381 verbose link bins [ { nopt: './bin/nopt.js' },
+381 verbose link bins   '/usr/local/lib/node_modules/grunt-cli/node_modules/.bin',
+381 verbose link bins   false ]
+382 verbose linkMans nopt@1.0.10
+383 verbose rebuildBundles nopt@1.0.10
+384 verbose rebuildBundles [ 'abbrev' ]
+385 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/.bin/nopt is being purged
+386 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/.bin/nopt
+387 info install nopt@1.0.10
+388 info postinstall nopt@1.0.10
+389 verbose unlock done using /Users/pschus200/.npm/_locks/nopt-7c7cdc9424e3d5c8.lock for /usr/local/lib/node_modules/grunt-cli/node_modules/nopt
+390 http 200 https://registry.npmjs.org/glob
+391 silly get cb [ 200,
+391 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+391 silly get     etag: '"7TRAGATHH6XDG1F8MMIDOT4XE"',
+391 silly get     'content-type': 'application/json',
+391 silly get     'cache-control': 'max-age=60',
+391 silly get     'content-length': '95941',
+391 silly get     'accept-ranges': 'bytes',
+391 silly get     date: 'Thu, 30 Apr 2015 12:28:48 GMT',
+391 silly get     via: '1.1 varnish',
+391 silly get     age: '34',
+391 silly get     connection: 'keep-alive',
+391 silly get     'x-served-by': 'cache-jfk1034-JFK',
+391 silly get     'x-cache': 'HIT',
+391 silly get     'x-cache-hits': '7',
+391 silly get     'x-timer': 'S1430396928.096014,VS0,VE0',
+391 silly get     vary: 'Accept' } ]
+392 verbose get saving glob to /Users/pschus200/.npm/registry.npmjs.org/glob/.cache.json
+393 silly addNameRange number 2 { name: 'glob', range: '>=3.2.9 <3.3.0', hasData: true }
+394 silly addNameRange versions [ 'glob',
+394 silly addNameRange   [ '1.1.0',
+394 silly addNameRange     '2.0.9',
+394 silly addNameRange     '2.0.8',
+394 silly addNameRange     '2.0.7',
+394 silly addNameRange     '2.1.0',
+394 silly addNameRange     '3.0.0',
+394 silly addNameRange     '3.0.1',
+394 silly addNameRange     '3.1.0',
+394 silly addNameRange     '3.1.1',
+394 silly addNameRange     '3.1.2',
+394 silly addNameRange     '3.1.3',
+394 silly addNameRange     '3.1.4',
+394 silly addNameRange     '3.1.5',
+394 silly addNameRange     '3.1.6',
+394 silly addNameRange     '3.1.7',
+394 silly addNameRange     '3.1.9',
+394 silly addNameRange     '3.1.10',
+394 silly addNameRange     '3.1.11',
+394 silly addNameRange     '3.1.12',
+394 silly addNameRange     '3.1.13',
+394 silly addNameRange     '3.1.14',
+394 silly addNameRange     '3.1.15',
+394 silly addNameRange     '3.1.16',
+394 silly addNameRange     '3.1.17',
+394 silly addNameRange     '3.1.18',
+394 silly addNameRange     '3.1.19',
+394 silly addNameRange     '3.1.20',
+394 silly addNameRange     '3.1.21',
+394 silly addNameRange     '3.2.0',
+394 silly addNameRange     '3.2.1',
+394 silly addNameRange     '3.2.3',
+394 silly addNameRange     '3.2.4',
+394 silly addNameRange     '3.2.5',
+394 silly addNameRange     '3.2.6',
+394 silly addNameRange     '3.2.7',
+394 silly addNameRange     '3.2.8',
+394 silly addNameRange     '3.2.9',
+394 silly addNameRange     '3.2.10',
+394 silly addNameRange     '3.2.11',
+394 silly addNameRange     '4.0.0',
+394 silly addNameRange     '4.0.1',
+394 silly addNameRange     '4.0.2',
+394 silly addNameRange     '4.0.3',
+394 silly addNameRange     '4.0.4',
+394 silly addNameRange     '4.0.5',
+394 silly addNameRange     '4.0.6',
+394 silly addNameRange     '4.1.2-beta',
+394 silly addNameRange     '4.1.2',
+394 silly addNameRange     '4.1.3',
+394 silly addNameRange     '4.1.4',
+394 silly addNameRange     '4.1.5',
+394 silly addNameRange     '4.1.6',
+394 silly addNameRange     '4.2.0',
+394 silly addNameRange     '4.2.1',
+394 silly addNameRange     '4.2.2',
+394 silly addNameRange     '4.3.0',
+394 silly addNameRange     '4.3.1',
+394 silly addNameRange     '4.3.2',
+394 silly addNameRange     '4.3.3',
+394 silly addNameRange     '4.3.4',
+394 silly addNameRange     '4.3.5',
+394 silly addNameRange     '4.4.0',
+394 silly addNameRange     '4.4.2',
+394 silly addNameRange     '4.5.0',
+394 silly addNameRange     '5.0.0',
+394 silly addNameRange     '4.5.1',
+394 silly addNameRange     '5.0.1',
+394 silly addNameRange     '4.5.2',
+394 silly addNameRange     '5.0.2',
+394 silly addNameRange     '4.5.3',
+394 silly addNameRange     '5.0.3',
+394 silly addNameRange     '5.0.4',
+394 silly addNameRange     '5.0.5' ] ]
+395 silly addNamed glob@3.2.11
+396 verbose addNamed "3.2.11" is a plain semver version for glob
+397 silly cache afterAdd glob@3.2.11
+398 verbose afterAdd /Users/pschus200/.npm/glob/3.2.11/package/package.json not in flight; writing
+399 verbose afterAdd /Users/pschus200/.npm/glob/3.2.11/package/package.json written
+400 http 200 https://registry.npmjs.org/lodash
+401 silly get cb [ 200,
+401 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+401 silly get     etag: '"2VC8IVVH1SBKQ1RPQC81KZEMQ"',
+401 silly get     'content-type': 'application/json',
+401 silly get     'cache-control': 'max-age=60',
+401 silly get     'content-length': '94905',
+401 silly get     'accept-ranges': 'bytes',
+401 silly get     date: 'Thu, 30 Apr 2015 12:28:48 GMT',
+401 silly get     via: '1.1 varnish',
+401 silly get     age: '39',
+401 silly get     connection: 'keep-alive',
+401 silly get     'x-served-by': 'cache-jfk1030-JFK',
+401 silly get     'x-cache': 'HIT',
+401 silly get     'x-cache-hits': '3',
+401 silly get     'x-timer': 'S1430396928.176101,VS0,VE0',
+401 silly get     vary: 'Accept' } ]
+402 verbose get saving lodash to /Users/pschus200/.npm/registry.npmjs.org/lodash/.cache.json
+403 silly addNameRange number 2 { name: 'lodash', range: '>=2.4.1 <2.5.0', hasData: true }
+404 silly addNameRange versions [ 'lodash',
+404 silly addNameRange   [ '0.1.0',
+404 silly addNameRange     '0.2.0',
+404 silly addNameRange     '0.2.1',
+404 silly addNameRange     '0.2.2',
+404 silly addNameRange     '0.3.0',
+404 silly addNameRange     '0.3.1',
+404 silly addNameRange     '0.3.2',
+404 silly addNameRange     '0.4.0',
+404 silly addNameRange     '0.4.1',
+404 silly addNameRange     '0.4.2',
+404 silly addNameRange     '0.5.0-rc.1',
+404 silly addNameRange     '0.5.0',
+404 silly addNameRange     '0.5.1',
+404 silly addNameRange     '0.5.2',
+404 silly addNameRange     '0.6.0',
+404 silly addNameRange     '0.6.1',
+404 silly addNameRange     '0.7.0',
+404 silly addNameRange     '0.8.0',
+404 silly addNameRange     '0.8.1',
+404 silly addNameRange     '0.8.2',
+404 silly addNameRange     '0.9.0',
+404 silly addNameRange     '0.9.1',
+404 silly addNameRange     '0.9.2',
+404 silly addNameRange     '0.10.0',
+404 silly addNameRange     '1.0.0-rc.1',
+404 silly addNameRange     '1.0.0-rc.2',
+404 silly addNameRange     '1.0.0-rc.3',
+404 silly addNameRange     '1.0.0',
+404 silly addNameRange     '1.0.1',
+404 silly addNameRange     '1.1.0',
+404 silly addNameRange     '1.1.1',
+404 silly addNameRange     '1.2.0',
+404 silly addNameRange     '1.2.1',
+404 silly addNameRange     '1.3.0',
+404 silly addNameRange     '1.3.1',
+404 silly addNameRange     '2.0.0',
+404 silly addNameRange     '2.1.0',
+404 silly addNameRange     '2.2.0',
+404 silly addNameRange     '2.2.1',
+404 silly addNameRange     '2.3.0',
+404 silly addNameRange     '2.4.0',
+404 silly addNameRange     '2.4.1',
+404 silly addNameRange     '3.0.0',
+404 silly addNameRange     '3.0.1',
+404 silly addNameRange     '3.1.0',
+404 silly addNameRange     '3.2.0',
+404 silly addNameRange     '3.3.0',
+404 silly addNameRange     '3.3.1',
+404 silly addNameRange     '3.4.0',
+404 silly addNameRange     '3.5.0',
+404 silly addNameRange     '3.6.0',
+404 silly addNameRange     '1.0.2',
+404 silly addNameRange     '3.7.0',
+404 silly addNameRange     '2.4.2' ] ]
+405 silly addNamed lodash@2.4.2
+406 verbose addNamed "2.4.2" is a plain semver version for lodash
+407 silly mapToRegistry name lodash
+408 silly mapToRegistry using default registry
+409 silly mapToRegistry registry https://registry.npmjs.org/
+410 silly mapToRegistry uri https://registry.npmjs.org/lodash
+411 verbose addRemoteTarball https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz not in flight; adding
+412 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz',
+412 verbose addRemoteTarball   'fadd834b9683073da179b3eae6d9c0d15053f73e' ]
+413 info retry fetch attempt 1 at 8:28:50 AM
+414 info attempt registry request try #1 at 8:28:50 AM
+415 http fetch GET https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz
+416 http fetch 200 https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz
+417 silly fetchAndShaCheck shasum fadd834b9683073da179b3eae6d9c0d15053f73e
+418 verbose about to build /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync
+419 verbose unlock done using /Users/pschus200/.npm/_locks/findup-sync-1678442878932c7d.lock for /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync
+420 verbose about to build /usr/local/lib/node_modules/grunt-cli
+421 verbose unlock done using /Users/pschus200/.npm/_locks/grunt-cli-58f484dab06f0a30.lock for /usr/local/lib/node_modules/grunt-cli
+422 verbose stack Error: shasum check failed for /var/folders/7p/vwsw3ln52q7_161xxhrqsx84yvgl7h/T/npm-136-6cceb203/registry.npmjs.org/lodash/-/lodash-2.4.2.tgz
+422 verbose stack Expected: fadd834b9683073da179b3eae6d9c0d15053f73e
+422 verbose stack Actual:   66347e61523858cfd9a12b1ddd21be640302d6b1
+422 verbose stack From:     https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz
+422 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/sha/index.js:38:8
+422 verbose stack     at ReadStream.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/sha/index.js:85:7)
+422 verbose stack     at ReadStream.emit (events.js:129:20)
+422 verbose stack     at _stream_readable.js:908:16
+422 verbose stack     at process._tickCallback (node.js:355:11)
+423 verbose cwd /Users/pschus200/src/marionette
+424 error Darwin 14.3.0
+425 error argv "node" "/usr/local/bin/npm" "install" "-g" "grunt-cli"
+426 error node v0.12.2
+427 error npm  v2.8.3
+428 error shasum check failed for /var/folders/7p/vwsw3ln52q7_161xxhrqsx84yvgl7h/T/npm-136-6cceb203/registry.npmjs.org/lodash/-/lodash-2.4.2.tgz
+428 error Expected: fadd834b9683073da179b3eae6d9c0d15053f73e
+428 error Actual:   66347e61523858cfd9a12b1ddd21be640302d6b1
+428 error From:     https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz
+429 error If you need help, you may report this error at:
+429 error     <https://github.com/npm/npm/issues>
+430 verbose exit [ 1, true ]
+431 verbose unbuild lib/node_modules/grunt-cli/node_modules/findup-sync
+432 info preuninstall findup-sync@0.1.3
+433 info uninstall findup-sync@0.1.3
+434 verbose unbuild rmStuff findup-sync@0.1.3 from /usr/local/lib/node_modules
+435 verbose unbuild rmStuff in /usr/local/lib/node_modules/grunt-cli/node_modules
+436 info postuninstall findup-sync@0.1.3
+437 silly gentlyRm /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync is being purged from base /usr/local
+438 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync
+439 silly vacuum-fs purging /usr/local/lib/node_modules/grunt-cli/node_modules/findup-sync
+440 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules/grunt-cli/node_modules
+441 verbose unbuild lib/node_modules/grunt-cli
+442 info preuninstall grunt-cli@0.1.13
+443 info uninstall grunt-cli@0.1.13
+444 verbose unbuild rmStuff grunt-cli@0.1.13 from /usr/local/lib/node_modules
+445 silly gentlyRm /usr/local/bin/grunt is being gently removed
+446 silly gentlyRm verifying /usr/local is an npm working directory
+447 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+448 silly gentlyRm deletion target /usr/local/bin/grunt is under /usr/local
+449 verbose gentlyRm vacuuming from /usr/local/bin/grunt up to /usr/local
+450 info postuninstall grunt-cli@0.1.13
+451 silly gentlyRm /usr/local/lib/node_modules/grunt-cli is being purged from base /usr/local
+452 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/grunt-cli
+453 silly vacuum-fs purging /usr/local/lib/node_modules/grunt-cli
+454 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
