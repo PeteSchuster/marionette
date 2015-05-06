@@ -1,7 +1,9 @@
 define([
-    'backbone'
+    'backbone',
+    'views/item/product',
+    'collections/products'
 ],
-function( Backbone ) {
+function (Backbone, Product) {
     'use strict';
 
     /* Return a ItemView class definition */
@@ -11,6 +13,8 @@ function( Backbone ) {
             console.log("initialize a Products CollectionView");
         },
 
+        childView: Product,
+
 
         /* ui selector cache */
         ui: {},
@@ -19,7 +23,9 @@ function( Backbone ) {
         events: {},
 
         /* on render callback */
-        onRender: function() {}
+        onRender: function () {
+            console.log("render a Products CollectionView");
+        }
     });
 
 });

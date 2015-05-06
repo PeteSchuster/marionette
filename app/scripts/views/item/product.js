@@ -1,8 +1,9 @@
 define([
     'backbone',
+    'backbone.marionette',
     'hbs!tmpl/item/product_tmpl'
 ],
-function (Backbone, ProductTmpl) {
+function (Backbone, Marionette, ProductTmpl) {
     'use strict';
 
     /* Return a ItemView class definition */
@@ -22,7 +23,9 @@ function (Backbone, ProductTmpl) {
         events: {},
 
         /* on render callback */
-        onRender: function () {}
+        onRender: function () {
+            console.log("render a Product ItemView");
+        }
     });
 
 });
