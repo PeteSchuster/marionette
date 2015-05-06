@@ -1,13 +1,19 @@
 define([
-    'backbone'
+    'backbone',
+    'backbone.marionette'
 ],
-function(Backbone){
+function (Backbone) {
     'use strict';
-
-    return Backbone.Router.extend({
+    var Router = Backbone.Marionette.AppRouter.extend({
         /* Backbone routes hash */
         routes: {
+            '': 'processUser'
+        },
+
+        processUser: function () {
             
         }
     });
+
+    return new Router();
 });
