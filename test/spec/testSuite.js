@@ -12,6 +12,7 @@ define(function() {
 		'spec/regions/page-header.js',
 		'spec/regions/page-main.js',
 		'spec/routers/router.js',
+		'spec/views/collection/products.js',
 		'spec/views/item/product.js'
 		]
 	};
