@@ -9,6 +9,10 @@ function (Backbone, Product) {
     return Backbone.Collection.extend({
         initialize: function () {
             console.log("initialize a Products collection");
+
+            this.on('add', function (model) {
+                console.log('something got added', model);
+            });
         },
 
         model: Product

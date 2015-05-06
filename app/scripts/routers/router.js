@@ -3,9 +3,9 @@ define([
     'backbone.marionette',
     'models/product',
     'collections/products',
-    'views/item/product'
+    'views/collection/products'
 ],
-function (Backbone, Marionette, ProductModel, ProductCollection, ProductView) {
+function (Backbone, Marionette, ProductModel, ProductCollection, ProductCollectionView) {
     'use strict';
     var Router = Backbone.Marionette.AppRouter.extend({
         /* Backbone routes hash */
@@ -82,21 +82,17 @@ function (Backbone, Marionette, ProductModel, ProductCollection, ProductView) {
               }
             ];
 
-            var productCollection = new ProductCollection({});
+            var productCollection = new ProductCollection();
 
             _.each(sampleProducts, function (sampleProduct) {
                 var product = new ProductModel(sampleProduct);
 
-                console.log(product);
-
                 productCollection.add(product);
             });
 
-            console.log(productCollection);
+            var productCollectionView = new ProductCollectionView({ collection: productCollection });
 
-            var productView = new ProductView({ collection: productCollection });
-
-            $(document.body).append(productView.render().el);
+            $(document.body).append(productCollectionView.render().el);
         }
     });
 
