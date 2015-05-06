@@ -1,19 +1,18 @@
 define([
     'backbone',
-    'views/item/product',
-    'collections/products'
+    'views/item/product'
 ],
-function (Backbone, Product) {
+function (Backbone, ProductItemView) {
     'use strict';
 
     /* Return a ItemView class definition */
     return Backbone.Marionette.CollectionView.extend({
 
-        initialize: function() {
+        initialize: function () {
             console.log("initialize a Products CollectionView");
         },
 
-        childView: Product,
+        itemView: ProductItemView,
 
 
         /* ui selector cache */
